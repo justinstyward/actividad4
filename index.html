@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener este archivo -->
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trabajos.html">Trabajos de tu interés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mensajes.html">Mensajes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de publicaciones -->
+    <div class="container mt-5">
+        <h2>Publicaciones</h2>
+        
+        <!-- Formulario para crear una publicación -->
+        <div class="mb-4">
+            <button class="btn btn-primary" data-bs-toggle="collapse" href="#formularioPublicacion" role="button" aria-expanded="false" aria-controls="formularioPublicacion">Crear publicación</button>
+            <div class="collapse mt-3" id="formularioPublicacion">
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="contenidoPublicacion" rows="3" placeholder="¿Qué estás pensando?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Publicar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Publicaciones mostradas (simulación de publicaciones) -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Danna</h5>
+                <p class="card-text"> ¡Hola a todos!</p>
+                <p class="card-text"><small class="text-muted">Publicado hace 2 horas</small></p>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Joseph</h5>
+                <p class="card-text">¿Cómo están todos?</p>
+                <p class="card-text"><small class="text-muted">Publicado hace 3 horas</small></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Archivos de JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script> <!-- Asegúrate de tener este archivo -->
+</body>
+</html>
